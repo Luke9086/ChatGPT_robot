@@ -10,7 +10,7 @@ for more information
 """
 
 async def main(prompt):
-    chatbot = Chatbot(email="adps1@foxmail.com", password="openai1311!")
+    chatbot = Chatbot(email="<email>", password="<password>")
     messages = ""
     async for line in chatbot.ask(prompt):
         print(line["choices"][0]["text"].replace("<|im_end|>", ""), end="")
